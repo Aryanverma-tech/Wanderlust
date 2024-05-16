@@ -7,14 +7,12 @@
     <div class="card col-6 offset-3 show-card listing-card">
         <img src="<%=listing.image%>" class="card-img-top show-img" alt="listing_image">
         <div class="card-body">
-          <p class="card-text">
-             <br>
-            <%= listing.description %> <br>
-            &#8377; <%= listing.price.toLocaleString("en-In") %> <br>
-            <%=listing.country%> <br>
-            <%=listing.location %><br>
+          <p class="card-text"><%= listing.description %></p>
+          <p class="card-text"> &#8377; <%= listing.price.toLocaleString("en-In") %></p>
+          <p class="card-text"><%=listing.country%> </p>
+          <p class="card-text"><%=listing.location %></p>
 
-          </p>
+          
         </div>
     
   </div>
@@ -28,6 +26,7 @@
     </form>
 
   </div>
+ 
   <div class="col-8 offset-3 mb-3">
     <hr>
     <h4>Leave a Review</h4>
