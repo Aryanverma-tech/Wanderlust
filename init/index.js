@@ -16,7 +16,7 @@ async function main() {
   await mongoose.connect(MONGO_URL);
 }
 
-const  initDb = async()=>{
+const  initDB = async()=>{
 
     await Listing.deleteMany({});
     initData.data=initData.data.map((obj)=>({...obj,owner:"6605505bd668cb47287dc72c",
@@ -24,4 +24,4 @@ const  initDb = async()=>{
     await Listing.insertMany(initData.data);
     console.log("data was initalized");
 };
-initDb();
+initDB();
